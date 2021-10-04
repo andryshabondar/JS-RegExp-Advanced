@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Pass Email List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <form class="inputForm">
+            <p class="mtMB">Login</p>
+            <input class="w90 login" type="text" placeholder="Enter login" required>
+            <p class="mtMB">Password</p>
+            <input class="w90 password" type="password" placeholder="Enter password" required>
+            <p class="mtMB">Email address</p>
+            <input class="w90 email" type="email" placeholder="Enter email" required>
+            <input class="addButton" onclick="checkAddUser()" type="button" value="Add user">
+            <input class="editUser" onclick="saveEditUser()" type="button" value="Edit user">
+        </form>
+
+        <table class="outputForm">
+            <thead >
+                <tr class="heder">
+                    <td class="heder_p">#</td>
+                    <td class="heder_p">Login</td>
+                    <td class="heder_p">Password</td>
+                    <td class="heder_p">Email</td>
+                    <td class="heder_p">Edit</td>
+                    <td class="heder_p">Delete</td>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td><input class="edit_button" type="button" value="edit"></td>
+                    <td><input type="button" value="delete"></td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
